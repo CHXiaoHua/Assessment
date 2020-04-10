@@ -1,0 +1,36 @@
+/********************************************************************  
+I declare that my assignment is wholly my own work in accordance with Seneca 
+Academic Policy. No part of this assignment has been copied manually or 
+electronically from any other source (including web sites) except for the 
+information supplied by the WEB222 instructors and / or made available in this 
+assignment for my use.  
+I also declare that no part of this assignment has been distributed to other 
+students.  
+Name: Zhaohui Li  Dated: 21/03/2020 
+********************************************************************/
+body {width:960px;margin: 0 auto;}
+header{background-color: grey;padding:10px;}
+nav{float: left; width: 20%;}
+nav ul{list-style-type: none; margin: 0; padding:0;width:100%;background-color:#444}
+nav li a{display: block; color:white;padding:20px 16px; text-decoration: none; text-transform: uppercase; font-weight: bold; font-size: 13px;}
+nav ul li a:hover{background-color: black; color: white;}
+nav ul li a.current{background-color:darkslategray; color: white;}
+div.list{width:80%;text-align: center;float: left;}
+td.abox{background-color:rgb(228, 228, 228);width:20%;vertical-align:center;border: solid;}
+td.bbox{background-color:white;height:200px;width:80%;vertical-align:center;border: solid;}
+div.list p{background-color:rgb(233, 64, 134); text-decoration: underline;}
+b{font-style: italic;}
+img.logo{float: right; border-radius: 8px; width: 30%;}
+div.box{position:fixed;right:10px;bottom: 10px;height:30px;width: 50px;text-align:center;padding-top:20px;background-color: black;border-radius: 20%;overflow: hidden;}
+div.box:hover:before{top:50%}
+div.box:hover .box-in{visibility: hidden;}
+div.box:before{position: absolute;top: -50%;left: 50%;transform: translate(-50%,-50%);content:'To Top';width: 40px;color:white;font-weight:bold;}    
+div.box-in{visibility: visible;display:inline-block;height:20px;width: 20px;border: 3px solid black;border-color: white transparent transparent white;transform:rotate(45deg);}
+footer{clear: both; background-color: black; color: white; padding:0.5px;}
+footer h2{margin: 0px; text-transform: uppercase; font-size: 13px; padding: 0.5px; text-align: center;}
+div.reflect{width:77%;float: left;padding-left: 3%}
+@media only screen and (max-width:768px) {
+    div.list, nav, div.reflect, footer{
+        width:100%;
+    }
+}
